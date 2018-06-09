@@ -1,0 +1,133 @@
+.footer{
+    background-color: $mainBrown;
+    padding-top: 50px;
+
+     @media screen and (max-width: 992px){
+        padding-top: 30px;
+    }
+    &-line{
+        background-color: white;
+        height: 3px;
+        width:200px;
+
+    }
+
+    &-values-box{
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        margin: 0 0 50px;
+
+        @media screen and (max-width: 992px){
+            align-items:center;
+        }
+        h3{
+            color: white;
+            font-family: $mainFont;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 15px 0;
+        }
+
+        img{
+            margin: 50px 0;
+        }
+    }
+
+    &-contact{
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0;
+
+        @media screen and (max-width: 992px){
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        &-top-margin{
+            margin-top: 25px;
+        }
+
+        h4{
+            color: white;
+            font-family: $mainFont;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 25px;
+        }
+        p{
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+        }
+
+        .footer-travel{
+            color: white;
+            margin-top: 40px;
+            i{
+                color: $mainYellow;
+                font-size: 16px;
+                padding-right: 10px;
+            }
+        }
+    }
+
+    &-social{
+        background-color: $darkBrown;
+
+        &-sidebyside{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+
+            @media screen and (max-width: 768px){
+                flex-direction: column;
+                justify-content: center;
+                height: 130px;
+            }
+
+            span{
+                cursor: pointer;
+                &:hover{
+                    color: $mainYellow;
+                }
+            }
+        }
+
+        p{
+            color: $mainBrown;
+             font-family: 'Open Sans', sans-serif;
+             margin: 0px;
+             display: inline-block;
+             max-width: 90%;
+
+             @media screen and (max-width: 992px){
+                font-size: 12px;
+            }
+            @media screen and (max-width: 768px){
+               text-align: center;
+            }
+        }
+
+        &-icons{
+            display: inline-block;
+
+            @media screen and (max-width: 768px){
+               margin-top: 30px;
+            }
+
+            i{
+                color: white;
+                padding: 0 20px;
+                font-size: 20px;
+
+                &:hover{
+                    color: $mainYellow;
+                }
+            }
+        }
+    }
+
+}

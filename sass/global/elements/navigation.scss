@@ -1,0 +1,100 @@
+
+button:focus{
+    outline: none!important;
+}
+
+.navbar{
+    background-color: transparent!important;
+    justify-content: center;
+    width: auto;
+    height: 80px;
+    margin: auto;
+   
+    @media screen and (max-width: 992px){
+        width: 100%;
+    }
+
+    &-collapse{
+        width: auto!important;
+    }
+
+    &-brand{
+        width: 30px;
+        path{
+            // fill: #f4754a!important;
+            fill: #6463fd;
+            animation-name: example;
+            animation-duration: 60s;
+            animation-direction: forward;
+            animation-iteration-count:infinite;
+        }
+        
+    }
+
+    &-toggler{
+        border: none;
+        z-index: 100;
+        cursor: pointer;
+        margin-top: 7px;
+    }
+
+    &-collapse{
+
+        @media screen and (max-width: 992px){
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            height: 100%!important;
+            width: 100%!important;
+            background-color:white;
+            z-index:50;
+        }
+       
+    }
+
+
+    &-nav{
+
+        @media screen and (max-width: 992px){
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-item{
+            .nav-link{
+                font-family: 'Open Sans', sans-serif;
+                text-transform: uppercase;
+                margin: 0 15px;
+                font-size: 13px;
+                font-weight: 700;
+                color: #4d443e;
+                 padding-left: 0px!important;
+                padding-right: 0px!important;
+                &:hover{
+                    color: $mainYellow;
+                }
+
+                @media screen and (max-width: 1200px){
+                    margin: 0 5px;
+                    font-size: 11px;
+                }
+                 @media screen and (max-width: 992px){
+                    margin: 10px 0;
+                    font-size: 16px;
+                
+                }
+            }
+        }
+    }
+}
+
+.active{
+    .nav-link{
+        color: $mainYellow!important;
+        border-bottom: 1px solid $mainYellow;
+    }
+ 
+}
+
